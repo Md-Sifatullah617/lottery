@@ -23,18 +23,23 @@ class _MyAppState extends State<MyApp> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Center(child: Text('Your lottery winning number is $x')),
+            SizedBox(height: 20,),
             Container(
               height: 250,
               decoration: BoxDecoration(
-                color: Colors.grey.withOpacity(.3)
+                color: Colors.grey.withOpacity(.3),
+                borderRadius: BorderRadius.circular(10)
               ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-               children: [
-                 Icon(Icons.error, color: Colors.red, size: 35,),
-                 SizedBox(height: 15,),
-                 Text('Better luck next time, yor number is $x try again')
-               ], 
+              child: Padding(
+                padding: const EdgeInsets.all(15.0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                 children: [
+                   Icon(Icons.error, color: Colors.red, size: 35,),
+                   SizedBox(height: 15,),
+                   Text('Better luck next time, yor number is $x try again')
+                 ],
+                ),
               ),
             )
           ],
