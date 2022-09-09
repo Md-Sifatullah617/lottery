@@ -31,6 +31,9 @@ class _MyAppState extends State<MyApp> {
         ),
         floatingActionButton: FloatingActionButton(onPressed: () {
           x++;
+          setState(() {
+
+          });
           print(x.toString());
           print("I love you.");
         }),
