@@ -32,6 +32,7 @@ class _MyAppState extends State<MyApp> {
                 mainAxisAlignment: MainAxisAlignment.center,
                children: [
                  Icon(Icons.error, color: Colors.red, size: 35,),
+                 SizedBox(height: 15,),
                  Text('Better luck next time, yor number is $x try again')
                ], 
               ),
